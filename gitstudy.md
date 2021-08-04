@@ -40,6 +40,7 @@ refactor(element): rename parameter x
     git status
     git add script.js
     git add .
+    git add -A
     git show l68124
     git show —pretty=fuller
 
@@ -73,3 +74,12 @@ refactor(element): rename parameter x
     git chechout another branchname
     git chechout mybranch
     git stash pop // return changes from stash after checkout from another branch
+ 
+    git checkout -b newbramchname // switch with no-commit changes
+    git commit -am 'message'
+
+    git branch -f master e543l
+    
+## ...
+
+    git remote add upstream 
