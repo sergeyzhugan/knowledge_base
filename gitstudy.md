@@ -83,3 +83,56 @@ refactor(element): rename parameter x
 ## ...
 
     git remote add upstream 
+
+
+### List
+
+Настройка локальной работы
+Установка Git на локальный компьютер
+    git clone
+Информационные команды
+    git status
+    git diff
+
+
+   список коммитов:
+    git log 
+    
+   инфо про коммит
+    git show
+    git show n6323
+    
+   авторы файла
+    git blame some.txt
+
+   автор строки
+    git blame some.txt | grep awesome
+
+Работа с удаленной информацией
+    есть ли измнения в удаленном репозитории:  
+    git fetch  
+    получить изменения из удаленного репозитория
+    git pull
+
+Работа с локальными изменениями
+    git commit
+    git push
+    git merge
+Буфер данных
+    git stash
+    git pop
+Ветки
+    git branch
+    git branch delete
+    git checkout
+Работа с файлами
+    git add
+    git reset
+    git reset --soft
+    git reset --hard
+    git reset HEAD
+Конфигурация Git
+    git alias
+    user
+    color
+    .gitignore
