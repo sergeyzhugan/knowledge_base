@@ -1,2 +1,2 @@
 First line
-Git is awesome
+Git is awesome.
