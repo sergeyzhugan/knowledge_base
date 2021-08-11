@@ -3,6 +3,7 @@
 ######
 
 1. Create github repo
+
 2. create sfdx project:
 
    sfdx force:project:create -n "MyProjectForGit"
@@ -60,12 +61,15 @@
     sfdx force:org:open
 
 14. Create objects and fields in scratch org
+
 15. synchronize with project:
 
     sfdx force:source:pull
 
 16. git add > commit > push
+
 17. edit sfdx-prject.json: add namespace
+
 18. create package:
  
     sfdx force:package:create --name "Formula One App" --description "Formula One App" --packagetype Managed --path force-app
@@ -74,3 +78,9 @@
 
     sfdx force:package:version:create --package "Formula One App" --definitionfile config/project-scratch-def.json --wait 10 --installationkeybypass
 
+20.  
+    sfdx force:org:create --definitionfile config/project-scratch-def.json --setalias test 
+    
+    sfdx force:package:install --package "Formula One App@0.1.0-1" --publishwait 10 --wait 10 --targetusername test 
+
+    sfdx force:org:open -u test
