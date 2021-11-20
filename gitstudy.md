@@ -71,12 +71,27 @@ refactor(element): rename parameter x
     find down:  Shift + n
     exit:       q
  
+
+
+## Arch
+
+- Working directory
+- Index
+- Repository
+
+
 ## Often commands
 
     git status
+
+### Add to Index
+
     git add script.js
     git add .
     git add -A
+
+### Show details of commit
+
     git show l68124
     git show —pretty=fuller
 
