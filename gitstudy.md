@@ -66,10 +66,10 @@ refactor(element): rename parameter x
 
 ## Listing command (LESS):
 
-find:   /
-find up:    n
-find down:  Shift + n
-exit:       q
+    find:   /
+    find up:    n
+    find down:  Shift + n
+    exit:       q
  
 ## Often commands
 
