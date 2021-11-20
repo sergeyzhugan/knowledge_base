@@ -46,7 +46,7 @@ refactor(element): rename parameter x
 
 #### Delete user section
 
-    git config --remove-section user // 
+    git config --remove-section user
 
 ### Editor
    
@@ -56,7 +56,21 @@ refactor(element): rename parameter x
 
     git config --global alias.c config
 
+## Show git command's options:
 
+    git config -h
+
+## Show manual:
+
+    git help config
+
+## Listing command (LESS):
+
+find:   /
+find up:    n
+find down:  Shift + n
+exit:       q
+ 
 ## Often commands
 
     git status
