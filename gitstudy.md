@@ -4,7 +4,11 @@
 
 `git init`
 
-## Good commit name
+## Good commit
+
+- atomic
+- consistent
+- commit early. commit often
 
 **what(where):make**
 
@@ -15,7 +19,7 @@ what:
 - refactor
 - fix
 
-refactor(element): rename parameter x
+refactor(element): ren ame parameter x
 
 ## Configuration
 
@@ -99,17 +103,23 @@ refactor(element): rename parameter x
 
     git add -p script.js
 
-## commit without add
+## commit without add: add+commit
 
-    git commit -am 'message'
-    git commit  'message' .gitignore
+    git commit -am 'message' // all changes for tracked
 
+    git commit  -m 'message' .gitignore
+
+## for untracked
+
+    alias.commitall '!git add .; git commit'  // for folder
+    alias.commitall '!git add -A; git commit'  // for project
+    
 ## remove files
 
     git rm ...
     git rm -r ... // for folders
-    git rm --cashed // only from index
-    git rm -f // not save change
+    git rm --cashed // delete from index only
+    git rm -f // don't save change
     git mv <old> <new> 
 
 ## branches
