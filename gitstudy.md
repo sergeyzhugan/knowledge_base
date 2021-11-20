@@ -19,21 +19,27 @@ refactor(element): rename parameter x
 
 ## Configuration
 
-    git config [user.name](http://user.name) "vasia"
-    git config [user.email](http://user.name) "vasia@ukr.net"
+### General
+
+    git config user.name "vasia"
+    git config user.email vasia@ukr.net
     
     cat .git/config
     
     git config --global [user.name](http://user.name) "vasia"
     git config --global [user.email](http://user.name) "vasia@ukr.net"
     
+    cat C:\Users\Sergey\.gitconfig
+
     git config --list
     git config --list —global
     
-    git config --unset user.name
-    git config --unset user.email
+    git config --unset user.name // to delete user.name config parameter
+    git config --unset user.email // to delete user.email config parameter
     
-    git config --remove-section user
+    git config --remove-section user // to delete user section
+
+    git config --global core.editor <PATH> + flags
 
 ## Often commands
 
