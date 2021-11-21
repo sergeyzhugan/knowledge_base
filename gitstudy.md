@@ -124,23 +124,129 @@ refactor(element): ren ame parameter x
 
 ## branches
 
+### branch list
+
     git branch
     git branch -v
-    git checkout newbranch
-    git checkout -f branchname // chenges lose
 
-    git checkout -f HEAD // delete changes
+### create new branch
 
-    git stash // save no-commit changes in stash befor checkout to another branch  
-    git chechout another branchname
+    git branch newbranch
+    
+### switch to branch
+
+    git checkout branchname
+
+### create new branch and checkout to it
+
+    git checkout -b new2branch
+
+### chenges will be lost
+    git checkout -f branchname 
+
+### delete changes
+
+    git checkout -f HEAD
+
+### save not-commit changes in stash befor checkout to another branch
+    git stash   
+    git chechout another_branchname
     git chechout mybranch
-    git stash pop // return changes from stash after checkout from another branch
+    git stash pop
  
-    git checkout -b newbramchname // switch with no-commit changes
-    git commit -am 'message'
+ ### switch with no-commit changes
+ 
+    git checkout -b newbramchname 
+    
+### move branch to another commit
 
     git branch -f master e543l
+
+    git branch -f master branchname
+
+### switch to and reset branch 'master'
+
+    git checkout -B master 3424
+
+### return files from old commit
+
+    git checkout 218b index.html
     
+### return file from last commit (without changes)
+
+    git checkout HEAD index.txt
+
+### return file from index (without changes)
+
+    git checkout file.txt
+
+
+### info about commits
+
+    git log
+
+    git log --oneline
+
+    git log master --oneline
+
+### info about commit 
+
+    git show 234h2
+
+    git show HEAD~
+
+    git show HEAD~~
+
+    git show HEAD~3
+
+    git show '@~'
+
+    git show master~
+
+### show files
+
+    git show master:index.html
+
+    git show :/add
+
+### show file from index 
+
+    git show :index.html
+
+### Merge
+
+    git checkout master
+    git merge fix
+
+### cancel fast-forward merge
+
+    git branch -f master ORIG_HEAD
+
+### delete branch (if branch merged with current branch)
+
+    git branch -d fix
+
+### delete branch 
+
+    git branch -D fix
+
+### Reflog
+
+    cat .git/logs/HEAD
+
+    git reflog // = alias for:  git log --oneline -g
+
+    git reflog master
+
+    git reflog --date=iso
+
+
+### recreaste branch from deleted branch commit
+
+    git branch branchname 'HEAD@{5}'
+    
+    git branch branchname 'HEAD@{2021-08-11 16:30:20 +0300}'
+
 ## ...
 
     git remote add upstream 
